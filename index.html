@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مرکز آموزشی انجنیر نصیر احمد عبادی — Academic Center</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- HEADER -->
+  <header class="navbar sticky-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <div>
+        <div class="title" id="centreName">مرکز آموزشی انجنیر نصیر احمد عبادی</div>
+        <div class="subtitle" id="centreTag">با ما در مسیر آموزش معیاری همراه شوید</div>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+	
+
+      <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-white" href="#home" data-scroll>خانه</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#about" data-scroll>درباره ما</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#courses" data-scroll>دوره‌ها</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#gallery" data-scroll>گالری</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact" data-scroll>ارتباط با ما</a></li>
+        </ul>
+
+        <!-- language toggle (existing) and theme toggle (new small button) -->
+        <button class="lang-btn" id="toggleLang">EN ↔ FA</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero py-5 reveal" id="home">
+    <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-4">
+      <div class="hero-text" data-aos="fade-up">
+        <h1 id="heroTitle">به <span id="heroCentre">مرکز آموزشی انجنیر نصیر احمد عبادی</span> خوش آمدید</h1>
+        <p id="heroText">آموزش ریاضیات، فزیک، کیمیا، آمادگی کانکور، زبان‌های انگلیسی و آلمانی و مهارت‌های کمپیوتر — با استادان مجرب و روش‌های نوین آموزشی برای رسیدن به بالاترین موفقیت تحصیلی و مهارتی.</p>
+        <div class="cta mt-3">
+          <button class="btn" onclick="document.getElementById('courses').scrollIntoView({behavior:'smooth'})" id="btnCourses">مشاهده دوره‌ها</button>
+          <button class="btn ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" id="btnContact">درخواست وقت مشاوره رایگان</button>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="images/logo1.png" alt="لوگو | Logo" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section reveal" id="about">
+    <div class="container">
+      <div class="card p-4 reveal">
+        <h3 id="aboutTitle">درباره ما</h3>
+        <p id="aboutText">
+          مرکز آموزشی انجنیر نصیر احمد عبادی با هدف ارتقای کیفیت یاددهی و یادگیری، فعالیت‌های خویش را بر مبنای اصول علمی، انضباط آموزشی و به‌کارگیری روش‌های معیاری تدریس تنظیم نموده است. این مرکز با فراهم‌سازی صنوف منظم و محدود، استفاده از میتودهای معاصر آموزشی و همکاری استادان متخصص و باتجربه، شرایط لازم را برای رشد علمی و تقویت مهارت‌های تحصیلی فراگیران مهیا می‌سازد.
+          <br><br>
+          تمرکز اساسی این مرکز بر آمادگی دانش‌آموزان برای امتحانات کانکور و سایر آزمون‌های مهم تعلیمی می‌باشد. در این راستا، برنامه‌ریزی منظم درسی، نظارت مستمر بر پیشرفت آموزشی و ارائه مشوره‌های تحصیلی، از جمله خدماتی است که به‌گونه دقیق و مسئولانه ارائه می‌گردد.
+          <br><br>
+          مرکز آموزشی نصیر احمد عبادی متعهد است تا زمینه‌ای مطمئن و معیاری را برای پیشرفت علمی فراهم ساخته و شاگردان را در مسیر ورود به پوهنتون‌ها و نهادهای تحصیلات عالی، با رعایت معیارهای مسلکی و اداری، همراهی نماید.
+        </p>
+		<video controls>
+		  <source src="images/ebadi.mp4" type="video/mp4">
+		</video>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <div class="section reveal" id="courses">
+    <div class="container" data-aos="zoom-in">
+      <h3 id="coursesTitle" class="mb-4">دوره‌های ما</h3>
+      <div class="grid">
+        <article class="card reveal" aria-labelledby="c1">
+          <h4 id="c1">ریاضیات — مباحث ابتدایی تا پیشرفته</h4>
+          <p>آموزش کامل ریاضیات از سطح ابتدایی تا پیشرفته، شامل مفاهیم اساسی، مباحث پیشرفته، تمرینات کاربردی و آمادگی برای امتحانات و کانکور.</p>
+          <a href="books/Mathmatics.pdf" download>ریاضیات</a>
+          <a href="books/tamreenat 1.pdf" download>تمرینات ریاضی بخش اول</a>
+          <a href="books/tmareenat 2.pdf" download>تمرینات ریاضی بخش دوم</a>
+          <a href="books/سوالات هندسه.pdf" download>تمرینات هندسه</a>
+        </article>
+
+        <article class="card reveal" aria-labelledby="c2">
+          <h4 id="c2">فزیک — درک مفهومی و حل مسائل کاربردی</h4>
+          <p>تقویت درک مفهومی و حل تمرینات عملی، بررسی قوانین و مسائل فیزیک به شیوه‌ای قابل فهم و مؤثر برای تمام سطوح تحصیلی.</p>
+          <a href="books/physics.pdf" download>فزیک</a>
+        </article>
+
+        <article class="card reveal" aria-labelledby="c3">
+          <h4 id="c3">کیمیا — مباحث  ابتدایی تا پیشرفته</h4>
+          <p>آموزش مفاهیم کیمیا، از پایه تا سطح پیشرفته، شامل تجربیات آزمایشگاهی، حل مسائل کاربردی و آمادگی برای امتحانات مهم.</p>
+		  <a href="books/کیمیا.pdf" download>کیمیا</a>
+        </article>
+
+        <article class="card reveal" aria-labelledby="c4">
+          <h4 id="c4">آمادگی کانکور — مسیر موفقیت تحصیلی</h4>
+          <p>برنامه‌ای جامع برای آماده‌سازی دانش‌آموزان جهت موفقیت در امتحانات کانکور، شامل تست‌های تمرینی، استراتیژی‌های پاسخ‌دهی و بررسی سوالات گذشته.</p>
+          <p id="kankoor">مجموعه فورم های کانکور:</p>
+          <a href="books/AljebraToLimits.pdf" download> الجبر - لیمت</a>
+          <a href="books/MushtaqIntegralGeometry.pdf" download>مشتق - انتیگرال و هندسه</a>
+          <a href="books/فزیک .pdf" download>فزیک</a>
+          <a href="books/کیمیا.pdf" download>کیمیا</a>
+          <a href="books/احصایه و احتمالات.pdf" download>احصاییه و احتمالات</a>
+        </article>
+
+        <article class="card reveal" aria-labelledby="c5">
+          <h4 id="c5">زبان انگلیسی — مکالمه و آموزش آکادمیک</h4>
+          <p>تقویت مهارت‌های Speaking, Listening, Reading و Writing برای اهداف تحصیلی و حرفه‌ای با روش‌های نوین و آموزش استادان مجرب.</p>
+        </article>
+
+        <article class="card reveal" aria-labelledby="c6">
+          <h4 id="c6">زبان آلمانی — از مبتدی تا پیشرفته</h4>
+          <p>آموزش زبان آلمانی از سطح مبتدی تا پیشرفته، شامل گرامر، مکالمه، درک مطلب و آمادگی برای آزمون‌های زبان.</p>
+        </article>
+
+        <article class="card reveal" aria-labelledby="c7">
+          <h4 id="c7">مهارت‌های کمپیوتر — کاربردی و حرفه‌ای</h4>
+          <p>توسعه مهارت‌های عملی در بخش های مختلف کمپیوتر شامل آفیس، برنامه‌نویسی مقدماتی، اینترنت، و ابزارهای دیجیتال برای استفاده روزمره و تحصیلی.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <section class="section reveal" id="gallery">
+    <div class="container">
+      <h3 id="galleryTitle" class="mb-4">گالری</h3>
+      <div class="gallery" id="galleryGrid">
+        <img class="reveal" src="images/img1.jpg" alt="Gallery image 1" data-src="images/img1.jpg" data-aos="fade-up">
+        <img class="reveal" src="images/img2.jpg" alt="Gallery image 2" data-src="images/img2.jpg" data-aos="fade-up">
+        <img class="reveal" src="images/img4.jpg" alt="Gallery image 4" data-src="images/img4.jpg" data-aos="fade-up">
+        <img class="reveal" src="images/img5.jpg" alt="Gallery image 5" data-src="images/img5.jpg" data-aos="fade-up">
+        <img class="reveal" src="images/img6.jpg" alt="Gallery image 6" data-src="images/img6.jpg" data-aos="fade-up">
+        <img class="reveal" src="images/img12.jpg" alt="Gallery image 12" data-src="images/img12.jpg" data-aos="fade-up">
+        <img class="reveal" src="images/img13.jpg" alt="Gallery image 13" data-src="images/img13.jpg" data-aos="fade-up">
+        <img class="reveal" src="images/img15.jpg" alt="Gallery image 15" data-src="images/img15.jpg" data-aos="fade-up">
+        <img class="reveal" src="images/img18.jpg" alt="Gallery image 18" data-src="images/img18.jpg" data-aos="fade-up">
+		    <img class="reveal" src="images/img14.jpg" alt="Gallery image 14" data-src="images/img14.jpg" data-aos="fade-up">
+        <img class="reveal" src="images/img21.jpg" alt="Gallery image 21" data-src="images/img21.jpg" data-aos="fade-up">
+        <img class="reveal" src="images/img22.jpg" alt="Gallery image 22" data-src="images/img22.jpg" data-aos="fade-up">
+        <img class="reveal" src="images/img29.jpg" alt="Gallery image 29" data-src="images/img29.jpg" data-aos="fade-up">
+        <img class="reveal" src="images/img30.jpg" alt="Gallery image 30" data-src="images/img30.jpg" data-aos="fade-up">
+        <img class="reveal" src="images/img31.jpg" alt="Gallery image 31" data-src="images/img31.jpg" data-aos="fade-up">
+        <img class="reveal" src="images/img32.jpg" alt="Gallery image 32" data-src="images/img32.jpg" data-aos="fade-up">
+        <img class="reveal" src="images/img34.jpg" alt="Gallery image 34" data-src="images/img34.jpg" data-aos="fade-up">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <div class="section reveal" id="contact">
+    <div class="container contact-grid" data-aos="fade-up">
+      <form id="contactForm" class="reveal" onsubmit="onsubmit=sendToWhatsApp(event)">
+        <div class="field">
+          <label for="nameInput" id="labelName">نام کامل</label>
+          <input id="nameInput" type="text" required placeholder="نام و تخلص">
+        </div>
+        <div class="field">
+          <label for="emailInput" id="labelEmail">ایمیل</label>
+          <input id="emailInput" type="email" required placeholder="ایمیل">
+        </div>
+        <div class="field">
+          <label for="subjectInput" id="labelSubject">موضوع</label>
+          <input id="subjectInput" type="text" required placeholder="برای چه دوره‌ای؟">
+        </div>
+        <div class="field">
+          <label for="messageInput" id="labelMessage">پیام</label>
+          <textarea id="messageInput" placeholder="پیام شما..." required></textarea>
+        </div>
+        <div class="d-flex gap-2 mt-2">
+          <button class="btn" type="submit" id="sendBtn">ارسال پیام</button>
+        </div>
+        <p class="muted mt-2" id="contactHint">پیام شما برای تیم ما فرستاده خواهد شد.</p>
+      </form>
+
+      <aside class="card p-3 reveal">
+        <h4 id="contactTitle">آدرس و راه‌های ارتباطی</h4>
+        <p class="muted">آدرس: مکروریان چهارم، تعمیر گالری — کابل، افغانستان.</p>
+        <p><strong>شماره تماس:</strong> 
+		<a href="tel:+93780721015" class="muted"> 93780721015+</a></p>
+		<p><strong>ایمیل:</strong><a href="mailto:naseerahmadebadi2025@gmail.com" class="muted"> naseerahmadebadi2025@gmail.com</a></p>
+        <p><strong>راه‌های ارتباطی ما در شبکه‌های اجتماعی</strong></p>
+        <div class="social-links mt-2">
+          <a href="https://www.facebook.com/share/189SV9rTMF/?mibextid=wwXIfr"><img src="images/socialmedia/facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/naseerebadi?igsh=MTVtYmFkZmRtaTZ5OA=="><img src="images/socialmedia/instagram.png" alt="Instagram"></a>
+          <a href="https://www.youtube.com/@NaseerEbadi"><img src="images/socialmedia/youtube.png" alt="YouTube"></a>
+          <a href="mailto:naseerahmadebadi2025@gmail.com" target="_blank" title="Email"><img src="images/socialmedia/gmail.png" alt="Email"></a>
+
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="reveal">
+    <span id="footerText">مرکز آموزشی انجنیر نصیر احمد عبادی</span>
+  </footer>
+
+
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 900,
+    once: true
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
