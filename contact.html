@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Naseer Ahmad Ebadi</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Naseer Ahmad Ebadi</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="section-padding">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title" data-aos="fade-up">Contact</h2>
+      <p class="section-subtitle mb-0" data-aos="fade-up" data-aos-delay="100">
+        Open to EIT / Junior Transportation Engineering opportunities, site engineering roles,
+        and infrastructure project teams.
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Contact Info -->
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="surface-card p-4 p-md-5 contact-card text-center h-100">
+          <img src="images/IMG_002.JPG" alt="Naseer Ahmad Ebadi" class="profile-pic-round mb-3">
+
+          <h4 class="mb-1">Naseer Ahmad Ebadi</h4>
+          <p class="text-muted mb-4">Transportation Engineer (EIT-Level)</p>
+
+          <ul class="text-start mx-auto" style="max-width: 360px;">
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+13435589163">+1 (343) 558-9163</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:naseerahmadebadi22@gmail.com">naseerahmadebadi22@gmail.com</a>
+            </li>
+            <li>
+              <i class="fab fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/naseer-ahmad-ebadi-84542535a/" target="_blank" rel="noopener">
+                LinkedIn Profile
+              </a>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              Ottawa, Ontario, Canada
+            </li>
+          </ul>
+
+          <div class="mt-4">
+            <a class="btn btn-outline w-100" href="projects.html">View Projects →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="surface-card p-4 p-md-5 contact-card h-100">
+          <h5 class="fw-bold mb-3">Send a Message</h5>
+          <p class="text-muted mb-4">
+            Use the form below to reach out regarding engineering opportunities,
+            project collaboration, or general inquiries.
+          </p>
+
+          <div id="success-alert" class="alert alert-success d-none" role="alert">
+            Your email is ready — please click Send to complete.
+          </div>
+
+          <form id="email-form">
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">
+              <i class="fas fa-paper-plane me-2"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="text-center">
+  <div class="container">
+    © 2026 — Naseer Ahmad Ebadi. All Rights Reserved
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({ duration:900, once:true });
+
+document.getElementById('email-form').addEventListener('submit', function(e){
+  e.preventDefault();
+
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if(name && email && message){
+    const to = "naseerahmadebadi22@gmail.com";
+    const subject = `Portfolio Inquiry from ${name}`;
+    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
+
+    window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+
+    const alertBox = document.getElementById('success-alert');
+    alertBox.classList.remove('d-none');
+
+    setTimeout(() => alertBox.classList.add('d-none'), 4000);
+    this.reset();
+  }
+});
+</script>
+
+</body>
+</html>
